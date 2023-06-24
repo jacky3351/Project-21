@@ -24,7 +24,6 @@ function setup() {
 	groundObj = new Ground(660, 750, 2000, 120)
 	leftSide = new Ground(1100, 630, 20, 120)
 	rightSide = new Ground(1300, 630, 20, 120)
-
 	var ball_options = {
 		isStatic:false,
 		restitution: 0.4,
@@ -47,10 +46,10 @@ function draw() {
   leftSide.show()
   rightSide.show()
 }
-
+leftSide.display()
+rightSide.display()
 function keyPressed(){
 	if(keyCode === UP_ARROW){
 		Matter.Body.applyForce(ball, ball.position, {x:1, y:-10})
 	}
 }
-
