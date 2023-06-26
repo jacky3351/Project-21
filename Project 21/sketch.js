@@ -50,6 +50,6 @@ leftSide.display()
 rightSide.display()
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball, ball.position, {x:1, y:-10})
+		Matter.Body.applyForce(ball, ball.position, {x:21, y:-21})
 	}
 }
